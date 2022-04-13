@@ -25,5 +25,8 @@
     "jsdoc": "^3.6.10",
     "mongoose": "^6.2.11",
     "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
   }
 }
