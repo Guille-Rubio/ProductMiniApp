@@ -10,6 +10,8 @@ html(lang="en")
     body 
         main
             form(action="/saveproduct" method="POST")
+                label(for="id") id
+                input(type="text" id="id" name="id")
                 label(for="product") Product Name
                 input(type="text" id="product" name="")
                 label(for="description") Product Description
