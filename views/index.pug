@@ -1,0 +1,21 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title miniAPP
+        link(rel="stylesheet" href="../css/style.css")
+
+    body 
+        main
+            form(action="/saveproduct" method="POST")
+                label(for="product") Product Name
+                input(type="text" id="product" name="")
+                label(for="description") Product Description
+                textarea(type="text" id="description" name="description")
+                label(for="productimg") Price
+                input(type="text" id="price" name="price")
+                label(for="image") URL Imagen
+                input(type="text" id="image" name="image")
+                button(type="input") Guardar Producto
