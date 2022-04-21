@@ -6,3 +6,15 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Productos
     body 
+        header 
+        main 
+            section 
+                - var i = 0
+                each product in savedProducts
+                    article(class="product-card")
+                        p #{savedProducts[i].product_name}
+                        p #{savedProducts[i].price}
+                        p #{savedProducts[i].description}
+                        img(src=savedProducts[i].imgURL)
+                        - i++
+        footer

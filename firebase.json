@@ -1,31 +1,12 @@
 {
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
-  "functions": {
-    "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
-    ]
-  },
-  "storage": {
-    "rules": "storage.rules"
-  },
-  "emulators": {
-    "auth": {
-      "port": 9099
-    },
-    "functions": {
-      "port": 5001
-    },
-    "firestore": {
-      "port": 8080
-    },
-    "storage": {
-      "port": 9199
-    },
-    "ui": {
-      "enabled": true
-    }
-  }
+  "type": "service_account",
+  "project_id": "miniapp-aced3",
+  "private_key_id": "9e333f91a1662bbba942b082b2bf9a43fec19386",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC6PyDCmuEPshnP\nUOFR8LrIEJlVd8B0szLRxObI5MAoKEnNh+zuGLzYNDNBp1ilNkAZfrlUOyGzIWwn\n1JitHJRfcMiNDfUNvPW3DY1kQuLGv9XECY8pwMtDvYPMcsiELuDWOu0g2W6xV0St\ngMKWlWWz/qa48Pcb+qBDoELMlfzb8Wad3v643PTEakK2ZIR+2RjPyCbIB/rP8Nzo\nSdtP4S/s8W5KFZ7wkWmlxj72kulOhu+fGkzOl0ksPIxBraVpNhc4Le2cCgqVNRQ8\nAAh0MORH3ZQx9/rQiTmwuVN0Oqan6vvy6P2wRFg1od1ft/VXLV4jfoZjANfYhDRw\nzwraWKTvAgMBAAECggEAKOZkE1hfxEqgUF66nHv5CKZcheBea0JPDrHm3Icfi7IN\nQw1ugnr8PZ55Axn05ZMcUHz7xfuWUvgsADM3tAxqqOrjn9ZI0lOEwkY/npzxoCPQ\nldRjlA+6k42yu9sZHa4Nwf3+xQ/6twcrFc8I7HiydOyfQE3qdkJ7n146TSNC/CmO\npcHJX0tP1XhXWW/DFC3iw8VadSCl4hrayd5h/namNtQ7fHXMzuoLhACoKHgHEmqA\neuWuD+i+50zOEYclKKSM8262+DZnTbY2SDV1tX/Gwe1Rk8GmdCNULzC2qG/Vn5Cf\nAoKTop82xESohnPp4XI2khBsijUXQG+49Yn6XNmBQQKBgQDyy/hXSzIR8T5d5dm0\nu7cL7A2kqarO1H87/mDr+wmqfZ2R7zDSrrTNqCD9o0cOvyuiClMhcEza8ZJGm4me\nvafyEZo5FrJPTSJNhxpRykLatqKtQ9prjUODFZmk6DnZddBTlso7fwq0d9My0sH7\nqE1guGDHEKw2PR+PKrWeexKA/QKBgQDEX+jyQneH4WYCYbSRXTpnFEBNkLgMfBIz\nHYtfzjajOH+BjfT/ZuFnhDA1ovtRw9Z8BIRpvToWSUGVy1S3aX8/DMFXVSY4JhuH\nIESqX40N8sa4zi69H4XirK6XMGNO/DQDPBL7BTQQrqmVJmzKfG1v5RYWgWc/LbJ1\nps/a9gtnWwKBgFI3H3Dv1ZSdzDCflIjOx70RwczwZxaCflMiYE+IQk2pG6I/DJlK\n7450UDeTAozLz0qflGbOUDgTdSTTplZKgoRF0aNjPB3+UI9QIGlxxBGrpoplX6Dr\nxOCuf8iHmo84hcLIXNKowkc6DBo5o9ZDt2/4/0xpKOd06yrfm4B+zFVBAoGAKvfh\nfMDWbsD/FR5T6ErB8LQZrd8wpmqvgMfCK2BvzB8cpzhsl0XnpELkWZgj7awwTkqe\nvpRNFXtKAoDPNKK82QrtczKKfla4R0TkQXNO5fJtURqsV22CWir2uNY5pJrCtsJ6\nVLq6vbu6F4yk2VmIiKdTwfDmqohRODUb3glgTWkCgYB6cTmJb5IcoFFnQvaId2Fl\n+cJPzazKkk975L78O6BQsTFPNQznNsqF0rRypDpztuJHg/0ymJurzPkUkXjLTYBI\nS9AqHLiUaHG7b4/5AsRKXeZFS7c+/ya58MxiXTXuAuwbPvPuQde6Hm1wt28gD3Rr\nG6QH/XnMU3HzfhR2WutnEg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-u8s48@miniapp-aced3.iam.gserviceaccount.com",
+  "client_id": "108753212720696585375",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-u8s48%40miniapp-aced3.iam.gserviceaccount.com"
 }
