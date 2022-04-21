@@ -5,19 +5,27 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title miniAPP
-        link(rel="stylesheet" href="../css/style.css")
-
-    body 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Montserrat:wght@100;400;600&family=Playfair+Display:wght@400;600;900&family=Source+Sans+Pro:wght@200;300;400&display=swap" rel="stylesheet">
+        link(rel="stylesheet", href="../css/style.css")
+    body
+        header 
+            h2 Product Manager miniApp
         main
-            form(action="/saveproduct" method="POST")
-                label(for="id") id
-                input(type="text" id="id" name="id")
-                label(for="product") Product Name
-                input(type="text" id="product" name="")
-                label(for="description") Product Description
-                textarea(type="text" id="description" name="description")
-                label(for="productimg") Price
-                input(type="text" id="price" name="price")
-                label(for="image") URL Imagen
-                input(type="text" id="image" name="image")
-                button(type="input") Guardar Producto
+            form(action="/saveproduct" method="POST" enctype="multipart/form-data")
+                div
+                    label(for="product") Product Name
+                    input(type="text" id="product" name="name")
+                div
+                    label(for="description") Product Description
+                    textarea(type="text" id="description" name="description" rows="5")
+                div
+                    label(for="productimg") Price
+                    input(type="text" id="price" name="price")
+                div
+                    input(type="file" id="file" name="product_img")
+                div
+                    button(type="input") Guardar Producto
+                div
+                    p=msg
