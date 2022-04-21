@@ -2,10 +2,7 @@ const admin = require("firebase-admin");
 
 const serviceAccount = require("../../Firebase.json");
 
-
-
-
-const BUCKET = "miniapp-aced3.appspot.com"
+const BUCKET = process.env.BUCKET
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

@@ -5,7 +5,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     min-width: 280px;
-    font-size: 2.5vh;
+    font-size: 16px;
     
 }
 
@@ -32,14 +32,16 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 form {
     color:black;
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-content: center;
+    align-items: center;
     justify-content: space-between;
     padding:15px;
     background: rgb(5,0,87);
@@ -51,6 +53,7 @@ form {
     height: 70vh;
     width:80vw;
     min-width: 250px;
+    max-width:450px;
 }
 form>div{
     display:flex;
@@ -65,7 +68,7 @@ input[type=text],textarea{
     line-height: 3vh;
     border-radius: 15px;
     margin:5px;
-    max-width: 250px;
+    width: 200px;
  
 }
 
@@ -106,4 +109,9 @@ p{
     text-align: center;
     font-weight: 600;
     color: green;
+}
+
+.view-products-button-box{
+    margin:15px;
+   
 }

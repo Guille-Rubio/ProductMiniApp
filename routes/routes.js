@@ -4,7 +4,7 @@ const controllers = require('../controllers/controllers')
 require('dotenv').config()
 //const upload = require('../config/multerConfig')
 const multer = require('../config/multerConfig')
-const uploadImage = require('../config/firebase/firebaseConfig')
+const uploadImage = require('../config/firebase/firestoreConfig')
 
 
 
